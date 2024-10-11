@@ -1,0 +1,8 @@
+.case-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 12px;
+  width: 100%;
+  background-color: #f8f9fa;
+  border: 1px solid #ae9a6a;
+}
