@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import UserList from "./userlist";
 import Header from "./header";
 import "./App.css"
+import AdminList from "./adminUserList";
 
 // Define tokens for admin and user
 const adminToken = "admin-token";
@@ -86,9 +87,8 @@ const App = () => {
         <Login handleLogin={handleLogin} />
       ) : (
         <div className="px-3">
-
-          {/* Render your UserList or Admin Panel based on role */}
-          <UserList/>
+{loggedInAs==='admin'?<AdminList/>: <UserList/>}
+         
         </div>
       )}
     </div>
